@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 60px;
+}
+
+.login-form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.login-form>div {
+    margin-top: 20px;
+}
+
+.block-username label,
+.block-passwd label,
+.block-employment label,
+.block-server label {
+    display: inline-block;
+    min-width: 200px;
+}
+
+.block-role>label,
+.block-sign-on>label {
+    display: inline-block;
+    max-width: 100px;
+}
+
+.block-role,
+.block-sign-on {
+    display: flex;
+    column-gap: 100px;
+    align-items: center;
+}
+
+.cta-btn {
+    margin-left: 200px;
+    margin-top: 30px;
+}
+
+/* css  for tag input... */
+input,
+select,
+button {
+    border: 2px solid #8ca7c0;
+    outline: none;
+}
+
+.role__radio {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.sign-on__checkbox::before,
+.sign-on__checkbox::after,
+.role__radio::before,
+.role__radio::after {
+    content: "";
+    display: inline-block;
+
+}
+
+.role__radio::before {
+    margin-right: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #eeeeeb;
+    border: 2px solid #8ca7c0;
+}
+
+.role__radio:has(:checked)::after {
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #8ca7c0;
+}
+
+.role__radio input[type="radio"] {
+    display: none;
+}
+
+.sign-on__checkbox {
+    position: relative;
+    display: flex;
+    align-items: center
+}
+
+.sign-on__checkbox::before {
+    margin-right: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    background: #eeeeeb;
+    border: 2px solid #8ca7c0;
+    
+}
+.sign-on__checkbox input[type="checkbox"]{
+    display: none;
+}
+
+.sign-on__checkbox:has(:checked)::after {
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    width: 8px;
+    height: 4px;
+    border-left: 2px solid #8ca7c0;
+    border-bottom: 2px solid #8ca7c0;
+    background: transparent;
+    rotate: -45deg;
+}

@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* common */
+a {
+    text-decoration: none;
+    color: #cdcdcd;
+}
+
+/* container */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.heading-lv1,
+.heading-lv2 {
+    font-weight: 400;
+}
+
+.heading-lv1 {
+    position: relative;
+}
+
+.heading-lv1--underlined::before {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    display: inline-block;
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #febc46;
+}
+
+.contact-infor,
+.contact {
+    display: flex;
+    column-gap: 10px;
+
+}
+
+.contact__items {
+    width: 70%;
+}
+
+.contact__items:first-child {
+    flex: 1;
+}
+
+
+.contact-infor {
+    margin-top: 27px;
+}
+
+.contact-infor i {
+    color: #cdcdcd;
+
+}
+
+.cotact-infor__address {
+    max-width: 150px;
+    color: #cdcdcd;
+}
+
+.row input,
+.row textarea {
+    margin-top: 10px;
+    padding: 5px;
+    width: 100%;
+}
+
+.btn {
+    cursor: pointer;
+    color: #fff;
+    margin-top: 10px;
+    padding: 10px;
+    background: #0bb8b6;
+    border: 1px solid #0bb8b6;
+}

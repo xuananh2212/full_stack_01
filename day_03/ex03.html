@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex03</title>
+    <link rel="stylesheet" href="./assets/css/style_03.css">
+</head>
+
+<body>
+    <form action="https://api-gateway.fullstack.edu.vn/action_page.php" class="login-form" method="post">
+        <div class="block-username">
+            <label for="username">
+                Username:
+            </label>
+            <input type="text" name="username" id="username">
+
+        </div>
+
+        <div class="block-passwd">
+            <label for="passwd">
+                Password:
+            </label>
+            <input type="password" name="passwd" id="passwd">
+
+        </div>
+
+        <div class="block-employment">
+            <label for="employment">
+                City of Employment:
+            </label>
+            <input type="text" name="employment" id="employment">
+
+        </div>
+
+        <div class="block-server">
+            <label for="server">
+                Web server:
+            </label>
+            <select name="server" id="server">
+                <option value="0" selected>--choose a server--</option>
+                <option value="1">server-1</option>
+                <option value="2">server-2</option>
+                <option value="3">server-3</option>
+            </select>
+
+        </div>
+
+        <div class="block-role">
+            <label>Please specify your role:</label>
+          <div class="bloc-role__inner">
+                <div class="block-role__row">
+                    <label class="role__radio">
+                        <input type="radio" name="role" id="admin" value="1">
+                        Admin
+                    </label>
+    
+                </div>
+                <div class="block-role__row">
+                    <label class="role__radio">
+                        <input type="radio" name="role" id="enginner" value="2">
+                        Engineer
+                    </label>
+    
+                </div>
+                <div class="block-role__row">
+                    <label class="role__radio">
+                        <input type="radio" name="role" id="manager" value="3">
+                        Manager
+                    </label>
+    
+                </div>
+                <div class="block-role__row">
+                    <label class="role__radio">
+                        <input type="radio" name="role" id="guest" value="4" checked>
+                        Guest
+                    </label>
+    
+                </div>
+          </div>
+
+        </div>
+
+        <div class="block-sign-on">
+            <label for="sign-on">Single Sign-on to the following</label>
+          <div class="sign-on__inner">
+                <div class="block-sign-on__row">
+                    <label class="sign-on__checkbox">
+                        <input type="checkbox" name="sign-on" id="sign-on-email" value="1">
+                        Mail
+                    </label>
+    
+                </div>
+                <div class="block-sign-on__row">
+                    <label class="sign-on__checkbox">
+                        <input type="checkbox" name="sign-on" id="sign-on-payroll" value="2">
+                        Payroll
+                    </label>
+    
+                </div>
+                <div class="block-sign-on__row">
+                    <label class="sign-on__checkbox">
+                        <input type="checkbox" name="sign-on" id="sign-on-self-service" value="3">
+                        Self-service
+                    </label>
+    
+                </div>
+    
+          </div>
+        </div>
+        <div class="cta-btn">
+            <button type="submit">Login</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+
+</html>
