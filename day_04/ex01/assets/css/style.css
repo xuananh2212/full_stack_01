@@ -1,0 +1,72 @@
+/* common */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* footer */
+
+.footer {
+    margin: 10px;
+    padding: 20px;
+    background: #334455;
+    border-radius: 6px;
+
+}
+
+.footer:hover .form-group__input::placeholder,
+.footer__text {
+    color: #ffa500;
+}
+.footer:hover .form-group__input{
+    background: #ddd;
+}
+.footer:hover .form-group__button{
+    background: #ffa500;
+    color: #fff;
+}
+
+.heading-lv1 {
+    font-weight: 700;
+    font-size: 2.0rem;
+    color: #fff;
+
+}
+
+.footer__desc {
+    margin-top: 15px;
+    max-width: 383px;
+    color: #e3f5f2;
+    line-height: 1.6;
+}
+
+.email-form {
+    margin-top: 10px;
+}
+
+.form-group__button,
+.form-group__input {
+    display: inline-block;
+    padding: 8px;
+    outline: none;
+    border: 1px solid #95959a;
+    border-radius: 2px;
+
+}
+.form-group__input{
+    padding-right: 15px;
+}
+
+.form-group__button {
+    font-size: 1.2rem;
+    margin-left: 3px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 9px 15px;
+    border-right: 2px solid #a49123;
+    border-bottom: 2px solid #a49123;
+    background: #f8db35;
+}

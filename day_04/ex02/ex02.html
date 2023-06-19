@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex02</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- link-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="reservation">
+        <h1 class="heading-lv1">RESERVATION</h1>
+        <h2 class="heading-lv2">Book your table</h2>
+        <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="post" class="booking-form">
+
+            <div class="form-group">
+                <input type="text" name="tag_name" placeholder="NAME" required
+                    pattern="^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂẾưăạảấầẩẫậắằẳẵặẹẻẽềềểếỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ\s\W|_]+">
+                <input type="email" name="email" placeholder="EMAIL">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="date" placeholder="DATE" onfocus="(this.type='date')"
+                    onblur="if(!this.value) this.type='text'" required>
+                <input type="text" name="time" placeholder="TIME" onfocus="(this.type='time')"
+                    onblur="if(!this.value) this.type='text'" required>
+            </div>
+
+            <div class="form-group">
+                <input type="number" name="people" placeholder="PEOPLE" required>
+                <input type="submit" value="Find A Table">
+            </div>
+        </form>
+    </section>
+
+</body>
+
+</html>
