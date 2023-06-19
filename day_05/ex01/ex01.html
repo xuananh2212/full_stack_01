@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex01</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- link-font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="heading-lv1">Hey there</h1>
+        <p class="container__desc">
+            <span class="container__text">We'd like hear from you</span>
+            .Send us your message or just say hy with our contact form or
+            directly via phone, we love to chat
+        </p>
+        <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="post" class="send__infor">
+            <!-- item-1 -->
+            <div class="form-group">
+                <input type="text" name="user_name" id="user-name" placeholder="Your name">
+                <label for="user-name" class="img__wrap">
+                    <i class="fa-solid fa-user"></i>
+                </label>
+                <label for="user-name" class="star">
+                    <i class="fa-solid fa-star"></i>
+                </label>
+                <i class="fa-solid fa-xmark"></i>
+                
+               
+
+                <div class="notification">Enter your Name</div>
+            </div>
+
+            <!-- item-2 -->
+            <div class="form-group">
+                <input type="email" name="eamil" id="email" placeholder="your@domain.com">
+                <label for="email" class="img__wrap">
+                    <i class="fa-solid fa-envelope"></i>
+                </label>
+                <label for="email" class="star">
+                    <i class="fa-solid fa-star"></i>
+                </label>
+                <i class="fa-solid fa-xmark"></i>
+                <div class="notification">Enter your email</div>
+            </div>
+
+            <!-- item-3 -->
+            <div class="form-group">
+                <input type="tel" name="tel" id="tel" placeholder="+44 00 123">
+                <label for="tel" class="img__wrap">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </label>
+                <label for="tel" class="star">
+                    <i class="fa-solid fa-star"></i>
+                </label>
+                <i class="fa-solid fa-xmark"></i>
+                <div class="notification">Enter your iphone</div>
+            </div>
+
+
+            <!-- item-4 -->
+            <div class="form-group">
+                <input type="text" name="subject" id="subject" placeholder="Subject">
+                <label for="subject" class="img__wrap">
+                    <i class="fa-solid fa-book"></i>
+                </label>
+              <label for="subject" class="up-down">
+                    <i class="fa-solid fa-caret-up"></i>
+                    <i class="fa-solid fa-caret-down"></i>
+              </label>
+                <i class="fa-solid fa-xmark"></i>
+                <div class="notification">Enter your Subject</div>
+            </div>
+
+
+            <!-- item-5 -->
+            <div class="form-group">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                <label for="message" class="img__wrap">
+                    <i class="fa-solid fa-message"></i>
+                </label>
+                <label for="message" class="star">
+                    <i class="fa-solid fa-star"></i>
+                </label>
+                <i class="fa-solid fa-xmark"></i>
+                <div class="notification">Enter your message</div>
+            </div>
+
+            <div class="cta-btn">
+                <input type="checkbox" name="" id="send-copy" hidden>
+                <label for="send-copy" class="lable__btn">
+                    Send me a copy of this message
+                </label>
+                <button class="btn" type="submit">SEND</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
