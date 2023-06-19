@@ -161,6 +161,10 @@ textarea {
 .form-group input:focus~.img__wrap {
     background: #333333;
 }
+.form-group:hover .star i,
+.form-group:hover .up-down i{
+    color: #333;
+}
 
 .form-group textarea:focus~.star,
 .form-group input:focus~.up-down,
