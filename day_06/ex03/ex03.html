@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex03</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- link-google-fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- link-font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="bg__logn-in">
+
+        <div class="container">
+            <div class="logn-in">
+                <article class="content__login">
+                    <div class="logo">
+                        <div class="logo__inner">
+                            <span class="logo__text">JL</span>
+                        </div>
+                        <h1 class="heading-lv1">Just Log</h1>
+                    </div>
+                    <p class="content__desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quos illum ipsum ad eos
+                    </p>
+
+                    <div class="cta-btn"> <a href="#!" class="btn-read">Read More</a></div>
+
+                    <div class="social__row">
+                        <a href="#!" class="social">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#!" class="social">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#!" class="social">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </a>
+                        <a href="#!" class="social">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+
+                    <div class="icon-block">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+                </article>
+                <article class="form-login__inner">
+                    <h2 class="heading-lv2">Login to <span class="form-login__text">your account</span></h2>
+                    <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="post"
+                        class="form-login">
+
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" class="input-email" placeholder="Email Address"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="passwd" id="passwd" class="passwd" placeholder="Password"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" name="remember" id="remember" class="remember">
+                            <label for="remember">
+                                Remeber me
+                            </label>
+                            <a href="#!" class="btn-forgot">Forgot Password</a>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn" type="submit">LOGIN</button>
+                        </div>
+                        <div class="form-group">
+                            <p class="form-login__desc">Don't have an account?
+                                <a href="#!" class="btn-regtster">Register here
+                                </a>
+                            </p>
+                        </div>
+
+                    </form>
+
+
+
+                </article>
+            </div>
+
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

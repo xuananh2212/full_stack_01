@@ -1,0 +1,149 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+/* common */
+
+.container {
+    width: 1135px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+/* header */
+.header {
+    margin-top: 50px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu-items:hover > .sub-menu{
+    display: block;
+}
+
+.menu-items {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 140px;
+    border: 1px solid #f3f3f3;
+    gap: 10px;
+}
+.menu-items:hover{
+    cursor: pointer;
+    color: #fff;
+    background: #2da5da;
+}
+
+.menu-items .items__inner {
+    padding: 20px;
+
+
+}
+
+.sub-menu__items,
+.items__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-items:nth-child(4)::before,
+.menu-items:nth-child(3)::before,
+.menu-items:nth-child(2)::before {
+    font-family: "FontAwesome";
+    content: "\f005";
+    color: #666;
+}
+
+.menu-items:nth-child(3)::before {
+
+    content: "\f0a1";
+
+
+}
+
+.menu-items:nth-child(4)::before {
+
+    content: "\f290";
+
+
+}
+
+.menu-items:nth-child(4)::after,
+.menu-items:nth-child(3)::after,
+.menu-items:nth-child(2)::after {
+    display: inline-block;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-bottom: 3px solid #666;
+    border-right: 3px solid #666;
+    rotate: 41deg;
+
+}
+.menu-items:hover::before{
+    color: #fff;
+}
+.menu-items:hover::after{
+    border-color: #fff;
+
+}
+
+.menu-items:hover .items__inner{
+    color: #fff;
+}
+
+.menu-items:nth-child(6) {
+    flex: 1;
+}
+
+
+/* sub-menu */
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 115%;
+    left: 0;
+    box-shadow: 2px 2px 3px 2px #666;
+
+}
+
+.sub-menu__link {
+    display: inline-block;
+    min-width: 180px;
+    padding: 20px;
+}
+
+.sub-menu__items+.sub-menu__items::before {
+    font-family: "FontAwesome";
+    content: "\f00c";
+    color: #666;
+    margin-left: 40px;
+}
+
+.sub-menu__items+.sub-menu__items {
+    border: 1px solid #f3f3f3;
+}
+
+.sub-menu__items:first-child {
+    position: absolute;
+    left: 43px;
+    top: -21px;
+    border: 15px solid #fff;
+    border-color: transparent transparent #fff transparent;
+}

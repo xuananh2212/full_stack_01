@@ -1,0 +1,258 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+:root {
+    --primary-bg-color: #ff574d;
+    --primary-color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg__logn-in {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: url(http://uiwebsoft.com/justlog/login-one/images/login-bg2.jpg) no-repeat;
+    background-position: -4px -259px;
+    background-size: cover;
+
+}
+
+.container {
+    margin: auto;
+    width: 800px;
+    max-width: calc(100% - 48px);
+}
+
+.logn-in {
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.content__login {
+    position: relative;
+    padding: 100px 18px;
+    width: 40%;
+    background: var(--primary-bg-color);
+}
+
+.form-login__inner {
+    width: 60%;
+}
+
+.heading-lv1 {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+}
+
+.social,
+.social__row,
+.logo__inner,
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+}
+
+.logo__inner {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background: var(--primary-color);
+}
+
+.logo__text {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: var(--primary-bg-color);
+}
+
+.content__desc {
+    margin-top: 20px;
+    color: var(--primary-color);
+    text-align: center;
+    line-height: 1.5;
+}
+
+.cta-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-read {
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 12px 38px;
+    color: var(--primary-bg-color);
+    background: var(--primary-color);
+    border-radius: 3px;
+}
+
+.social__row {
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.social {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    column-gap: 0;
+    background: #db5c4f;
+    color: var(--primary-color);
+    text-decoration: none;
+
+}
+
+.icon-block {
+    position: absolute;
+    display: flex;
+    right: -20px;
+    top: 210px;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--primary-bg-color);
+    background: var(--primary-color);
+    box-shadow: 1px 2px 3px #b8b1b1;
+
+}
+
+.form-login__inner {
+    padding: 50px;
+    background: var(--primary-color);
+}
+
+.heading-lv2 {
+    position: relative;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #272323;
+}
+
+.form-login__text {
+    color: var(--primary-bg-color);
+}
+
+.heading-lv2::after {
+    position: absolute;
+    top: 30px;
+    left: 167px;
+    content: "";
+    display: inline-block;
+    width: 46px;
+    height: 1px;
+    background-color: var(--primary-bg-color);
+
+
+
+}
+
+.form-login {
+    margin-top: 40px;
+}
+
+.form-group input,
+.form-group label {
+    display: block;
+
+    outline: none;
+    border: none;
+    color: #717171;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e8e8e8;
+    font-size: 0.9rem;
+
+}
+
+.form-group {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-group:nth-child(3) {
+    justify-content: space-between;
+}
+
+.btn-forgot {
+    text-decoration: none;
+    color: #717171;
+}
+
+.form-group .remember {
+    display: none;
+}
+
+.form-group label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+}
+
+.form-group label::before,
+.form-group label::after {
+    content: "";
+    display: inline-block;
+
+}
+
+.form-group label::before {
+
+    width: 15px;
+    height: 15px;
+    border: 2px solid #e8e8e8;
+    border-radius: 3px;
+}
+
+.form-group input[type="checkbox"]:checked~label::after {
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    width: 10px;
+    height: 4px;
+    border-left: 3px solid #333;
+    border-bottom: 3px solid #333;
+    rotate: -45deg;
+}
+
+.form-group button {
+    cursor: pointer;
+    width: 100%;
+    padding: 12px;
+    outline: none;
+    border: none;
+    color: var(--primary-color);
+    background: var(--primary-bg-color);
+    border-radius: 3px;
+    letter-spacing: 2px;
+
+}
+
+.form-group {
+    margin-top: 24px;
+
+}
+
+.btn-regtster,
+.form-login__desc {
+    color: #717171;
+}
