@@ -1,0 +1,107 @@
+@font-face {
+    font-family: Asap;
+    src: url(../fonts/Asap-Regular.ttf);
+}
+
+@font-face {
+    font-family: Asap;
+    src: url(../fonts/Asap-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: Asap;
+    src: url(../fonts/Asap-Medium.ttf);
+    font-weight: 600;
+}
+
+/* common */
+
+body {
+    font-family: Asap, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* profile */
+.profile-head {
+    position: relative;
+}
+
+
+.img-cover {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    /* -webkit-filter: brightness(146%);
+    -moz-filter: brightness(146%);
+    filter: brightness(146%); */
+}
+.profile-head__infor {
+    top: 100%;
+    left: 5%;
+    position: absolute;
+    transform: translateY(-100%);
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.img-avatar{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.heading-lv1{
+    margin-top: -50px;
+    font-weight: 700;
+    color: #fff;
+    font-size: 2.0rem;
+}
+
+.body-infor__row{
+    display: flex;
+    margin-top: 50px;
+    column-gap: 25px;
+}
+
+.desc-year,
+.desc-invest {
+    color: #fff;
+}
+
+.text__values{
+    margin-left: 5px;
+    font-size: 1.5rem;
+}
+
+.profile-infor,
+.list__infor{
+    display: flex;
+}
+.list__infor{
+    margin-left: auto;
+    margin-right: 60px;
+    column-gap: 15px;
+}
+
+.list__infor a {
+    display: inline-block;
+    padding: 12px 0;
+    color: black;
+    font-weight: 600;
+}
+
+.items:hover a{
+    color: rgb(172, 28, 28);
+    border-bottom: 3px solid rgb(172, 28, 28);
+}
+
+

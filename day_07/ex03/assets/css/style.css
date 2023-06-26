@@ -1,0 +1,173 @@
+@font-face {
+    font-family: Asap;
+    src: url(../fonts/Asap-Regular.ttf);
+}
+
+@font-face {
+    font-family: Asap;
+    src: url(../fonts/Asap-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Asap;
+    src: url(../fonts/Asap-Medium.ttf);
+    font-weight: 600;
+}
+
+/* common */
+
+body {
+    font-family: Asap, sans-serif;
+    background: #f3f1ef;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    max-width: calc(100% - 48px);
+}
+
+.immovables {
+    padding: 20px 0;
+}
+
+.immovables__head {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.immovables__head .row {
+    flex: 1;
+    height: 2px;
+    background: #e9eaea;
+}
+
+.heading-lv1 {
+    font-weight: 700;
+}
+
+.immovables-row {
+    margin-top: 18px;
+    display: flex;
+    column-gap: 12px;
+
+}
+
+
+.immovables-row label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 8px;
+    padding: 15px 18px;
+    border-radius: 999px;
+    background: #e9eaea;
+    cursor: pointer;
+}
+
+.text__desc {
+    font-size: 0.7rem;
+}
+
+.text__city {
+    font-weight: 600;
+}
+input{
+    display: none;
+}
+
+.immovables__body {
+    flex-shrink: 0;
+    width: 100%;
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    transition: .25s;
+}
+
+.body__items {
+    position: relative;
+}
+
+.body__items img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    filter: brightness(65%);
+    -webkit-filter: brightness(65%);
+    -moz-filter: brightness(65%);
+
+}
+
+.text__county,
+.body__desc {
+    position: absolute;
+    left: 6%;
+    top: 10%;
+    color: #fff;
+}
+
+.text__county {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.body__desc {
+    top: 84%;
+}
+.immovables__body{
+    display: none;
+}
+
+input[id="hcm"]:checked ~ .immovables-row label[for="hcm"] {
+    background: #af7c38;
+    color: #fff;
+}
+input[id="hn"]:checked~.immovables-row label[for="hn"] {
+    background: #af7c38;
+    color: #fff;
+}
+input[id="bd"]:checked~.immovables-row label[for="bd"] {
+    background: #af7c38;
+    color: #fff;
+}
+input[id="dnai"]:checked~.immovables-row label[for="dnai"] {
+    background: #af7c38;
+    color: #fff;
+}
+input[id="brvt"]:checked~.immovables-row label[for="brvt"] {
+    background: #af7c38;
+    color: #fff;
+}
+input[id="dnang"]:checked~.immovables-row label[for="dnang"] {
+    background: #af7c38;
+    color: #fff;
+}
+input[id="la"]:checked~.immovables-row label[for="la"] {
+    background: #af7c38;
+    color: #fff;
+}
+input[id="qn"]:checked~.immovables-row label[for="qn"] {
+    background: #af7c38;
+    color: #fff;
+}
+input[id="hcm"]:checked~.immovables__list .immovables__body:nth-child(1) ,
+input[id="hn"]:checked ~ .immovables__list .immovables__body:nth-child(2),
+input[id="bd"]:checked~.immovables__list .immovables__body:nth-child(3),
+input[id="dnai"]:checked~.immovables__list .immovables__body:nth-child(4),
+input[id="brvt"]:checked~.immovables__list .immovables__body:nth-child(5) ,
+input[id="dnang"]:checked~.immovables__list .immovables__body:nth-child(6),
+input[id="la"]:checked~.immovables__list .immovables__body:nth-child(7),
+input[id="qn"]:checked~.immovables__list .immovables__body:nth-child(8) {
+   display: grid;
+}

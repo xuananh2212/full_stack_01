@@ -1,0 +1,92 @@
+@font-face {
+    font-family: Asap;
+    src: url(../fonts/Asap-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Asap;
+    src: url(../fonts/Asap-Regular.ttf);
+}
+
+@font-face {
+    font-family: SFU;
+    src: url(../fonts/SFUHelveticaCondensedBlack.TTF);
+
+}
+
+:root {
+    --color-Heading: #bf4240;
+    --color-text: #3f3424;
+}
+
+
+
+body {
+    font-family: Asap, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.banner {
+    position: relative;
+}
+
+
+.img__banner {
+    width: 100%;
+    object-fit: cover;
+}
+
+.infor__banner {
+    top: 32%;
+    left: 14.5%;
+    position: absolute;
+}
+
+.infor__banner__top {
+    padding: 24px 20px 50px;
+    background: #ffffffd2;
+    border-radius: 5px;
+}
+
+.heading-lv1 {
+    color: var(--color-Heading);
+    font-weight: 700;
+    font-size: 2.0rem;
+}
+
+.banner__desc {
+    color: var(--color-text);
+    margin-top: 18px;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+.banner__row {
+    margin-top: 10px;
+}
+
+.text__address {
+    color: var(--color-text);
+    font-size: 1.1rem;
+}
+
+.btn {
+    left: 75%;
+    top: -5px;
+    position: relative;
+    border-radius: 5px;
+    background: var(--color-Heading);
+    font-family: SFU, sans-serif;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+
+}
