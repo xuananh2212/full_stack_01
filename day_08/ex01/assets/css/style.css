@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background: #f8f8f9;
+}
+
+
+/* common */
+
+.container {
+    position: relative;
+    width: 1135px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #4d5464;
+}
+
+
+/* header */
+
+.header {
+    padding: 12px 0;
+
+}
+
+.nav-bar {
+    display: flex;
+
+}
+
+.log,
+.polygon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log {
+    font-size: 2.0rem;
+    font-weight: 700;
+}
+
+.polygon {
+    position: relative;
+    top: 3px;
+    width: 25px;
+    height: 20px;
+    background-color: #333;
+    clip-path: polygon(0 50%, 25% 0, 80% 0, 100% 50%, 80% 100%, 25% 100%);
+    rotate: 90deg;
+
+}
+
+.polygon__sub {
+    width: 15px;
+    height: 12px;
+    background-color: #fff;
+    clip-path: polygon(0 50%, 25% 0, 80% 0, 100% 50%, 80% 100%, 25% 100%);
+}
+
+
+.nav-list {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-items--icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.nav-items:nth-child(7) i {
+    text-align: center;
+    line-height: 16px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    font-size: 0.7rem;
+
+}
+
+.nav-items--icon::after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-left: 3px solid #333;
+    border-bottom: 3px solid #333;
+    rotate: 311deg;
+    margin-left: 3px;
+
+}
+
+.nav-items {
+    cursor: pointer;
+    padding: 24px 24px;
+    font-weight: 600;
+}
+
+.nav-items:hover::after,
+.nav-items:hover {
+    color: #8d929c;
+    border-color: #8d929c;
+}
+
+.nav-items:hover .mega-menu {
+    visibility: visible;
+}
+
+
+.mega-menu {
+    visibility: hidden;
+    width: 1135px;
+    max-width: 100%;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    border-radius: 5px;
+    box-shadow: -2px 3px 3px 3px #e5e2e2;
+    background: #fff;
+}
+
+.meage__list__items a {
+    display: inline-block;
+    padding: 12px;
+}
+
+.mega-items:first-child li:nth-child(5) {
+    margin-top: 35px;
+}
+
+.mega-items:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.mega-items:nth-child(4),
+.mega-items:nth-child(5) {
+    align-self: flex-end;
+}
+
+.mega-items--line {
+    padding-left: 20px;
+    border-left: 2px solid #ece9e9;
+}
