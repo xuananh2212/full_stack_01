@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system,
+        BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #eeeeee;
+}
+
+input {
+    display: none;
+}
+
+.wrap,
+.about-us {
+    width: 750px;
+    margin: 100px auto 0px auto;
+    background-color: #fff;
+}
+
+.wrap {
+    margin-top: 0;
+    overflow-x: auto;
+    transform-origin: left top;
+    transform: rotateX(0deg);
+
+
+}
+
+/* .wrap--slideshow,
+.wrap--levenshtein,
+.wrap--progresso,
+.wrap--php {
+    animation: myrotate2 2s linear ;
+
+} */
+
+.about__list {
+    display: flex;
+}
+
+.item__about {
+    padding: 5px;
+}
+
+.item__about:last-child {
+    flex: 1;
+}
+
+.item__about+.item__about {
+    border-left: 1px solid #c2c4bf;
+    border-bottom: 1px solid #c2c4bf;
+}
+
+.item__about:first-child {
+    border-bottom: 1px solid #c2c4bf;
+}
+
+.item__about label {
+    display: block;
+    padding: 20px 12px;
+    font-weight: 500px;
+    transition: background-color 0.2s linear;
+    transition-property: color;
+
+}
+
+.heading.lv2 {
+    font-weight: 700;
+    font-size: 2.0rem;
+}
+
+.infor {
+    width: 800px;
+    padding: 20px 0 0 20px;
+}
+
+.desc {
+    line-height: 1.5rem;
+}
+
+.infor--slideshow,
+.infor--levenshtein,
+.infor--progresso,
+.infor--php {
+    display: none;
+}
+
+input[id="slideshow"]:checked~.about-us .about__list label[for="slideshow"],
+input[id="levenshtein"]:checked~.about-us .about__list label[for="levenshtein"],
+input[id="progresso"]:checked~.about-us .about__list label[for="progresso"],
+input[id="php"]:checked~.about-us .about__list label[for="php"] {
+    background-color: #3498da;
+    color: #fff;
+}
+
+input[id="slideshow"]:checked~.wrap .infor--slideshow,
+input[id="levenshtein"]:checked~.wrap .infor--levenshtein,
+input[id="progresso"]:checked~.wrap .infor--progresso,
+input[id="php"]:checked~.wrap .infor--php {
+    display: block;
+}
+
+
+input[id="slideshow"]:checked~.wrap--slideshow,
+input[id="levenshtein"]:checked~.wrap--levenshtein,
+input[id="progresso"]:checked~.wrap--progresso,
+input[id="php"]:checked~.wrap--php {
+    animation: myrotate .5s linear;
+
+}
+
+@keyframes myrotate {
+    0% {
+        transform: rotateX(-90deg);
+
+    }
+
+    100% {
+        transform: rotateX(0deg);
+    }
+
+}
+
+/* @keyframes myrotate2 {
+    0% {
+        transform: rotateX(0deg);
+
+    }
+
+    100% {
+        transform: rotateX(90%);
+    }
+
+} */

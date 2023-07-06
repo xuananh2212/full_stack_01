@@ -1,0 +1,143 @@
+body {
+    background-color: #323641;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.rectangle {
+    width: 100vw;
+    height: 100vh;
+}
+
+.rectangle-wrap {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 400px;
+    height: 200px;
+    background-color: #cf4a43;
+    transition: all 0.2s linear;
+
+}
+
+.shadow {
+    position: relative;
+    top: 50%;
+    left: calc(50% - 250px);
+    transform: rotateX(60deg);
+    width: 500px;
+    height: 100px;
+    background-color: #17181bad;
+    border-radius: 50%;
+    transition: transform 0.25s linear;
+
+
+}
+
+.triangle-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    background-color: #e15349;
+}
+
+.triangle-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(100% 0, 100% 100%, 0% 100%);
+    background-color: #e95f55;
+}
+
+.letter {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 40%;
+    background-color: #fff;
+    transition: height 0.2s linear;
+    transition-delay: 0.2s;
+    overflow: hidden;
+
+
+}
+
+.letter-rectangle__top {
+    margin-top: 20px;
+    margin-left: 12px;
+    width: 128px;
+    height: 20px;
+    background-color: #cf4a43;
+}
+
+.letter-rectangle__bottom {
+    margin-top: 20px;
+    margin-left: 12px;
+    width: 80px;
+    height: 20px;
+    background-color: #cf4a43;
+}
+
+.letter-circle {
+    margin-top: 90px;
+    margin-left: 250px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #cf4a4356;
+
+}
+
+.triangle-top {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100%);
+    clip-path: polygon(0 42%, 50% 0, 100% 42%, 100% 100%, 0% 100%);
+    background-color: #cf4a43;
+    z-index: -1;
+    transition: height 0.2s linear;
+
+}
+
+.rectangle-wrap:hover .triangle-top {
+
+    height: calc(100% + 150px);
+}
+
+.rectangle-wrap:hover {
+    transform: translateY(50px);
+}
+
+.rectangle-wrap:hover .letter {
+    height: 180%;
+}
+
+.rectangle-wrap:hover~.shadow {
+    transform: rotateX(70deg) scale(0.5);
+
+}
+
+.row__parallelogram {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 5px;
+}
+
+.parallelogram {
+    height: 10px;
+    background-color: #cf4a43;
+    transform: skewX(-30deg);
+}

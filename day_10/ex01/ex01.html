@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex01</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- link-font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="burger-omenu">
+        <input type="checkbox" name="menu" id="menu" hidden>
+        <div class="container">
+            <h1 class="heading lv1">#1 bugrer menu</h1>
+            <p class="desc">inspired by <span class="text--size">google materinal design</span></p>
+        </div>
+        <div class="overlay">
+            <label for="menu"><i class="fa-solid fa-bars icon-menu"></i></label>
+        </div>
+
+        <div class="nav-bar">
+            <ul class="list">
+                <li class="items">
+                    <label for="menu">
+                        <i class="fa-solid fa-arrow-right arrow"></i>
+                    </label>
+                </li>
+                <input type="radio" name="list" id="home">
+                <input type="radio" name="list" id="about">
+                <input type="radio" name="list" id="portfolio">
+                <input type="radio" name="list" id="contact">
+                <li class="items items--home">
+                    <label for="home">
+                        home
+                    </label>
+                </li>
+                <li class="items items--about">
+                    <label for="about">
+                        about
+                    </label>
+                </li>
+                <li class="items items--portfolio">
+                    <label for="portfolio">
+                        portfolio
+                    </label>
+                </li>
+                <li class="items items--contact">
+                    <label for="contact">
+                        contact
+                    </label>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
