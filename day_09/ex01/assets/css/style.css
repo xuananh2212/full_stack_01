@@ -61,7 +61,7 @@ button {
 
 .time-axis__left {
 
-    width: 50%;
+    width: 70%;
 }
 
 .circle {
@@ -102,6 +102,7 @@ button {
 
 .circle::after {
     content: "2012-2017";
+    transition: all 0.2s ease;
 
 }
 
@@ -123,7 +124,7 @@ button {
 
 .time-axis__right {
     display: flex;
-    width: 50%;
+    width: 30%;
 }
 
 .img__inner {
@@ -133,21 +134,21 @@ button {
 }
 
 .img-thumb:nth-child(1) {
-    width: 300px;
-    height: 400px;
+    width: 250px;
+    height: 300px;
     object-fit: cover;
 }
 
 .img__small {
     position: absolute;
     top: 30%;
-    left: -50%;
+    left: -30%;
 
 }
 
 .img__small .img-thumb {
-    width: 250px;
-    height: 350px;
+    width: 200px;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -171,4 +172,27 @@ button {
 .img__desc {
     margin-top: 18px;
     color: #fff;
+}
+
+.time-axis__content {
+    transform: translateX(0);
+    transition: transform .25s linear;
+}
+
+.time-axis__items:hover .time-axis__content {
+    transform: translateX(115%);
+
+}
+
+.time-axis__items:hover .time-axis__content .heading.lv2,
+.time-axis__items:hover .time-axis__content .time-axis__desc {
+    text-align: left;
+}
+.time-axis__items:hover .time-axis__content .btn{
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.time-axis__items:hover .circle::after{
+    transform: translateX(-170%);
 }
