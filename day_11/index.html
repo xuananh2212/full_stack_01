@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grover</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/basic.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- link-googlefont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- link-font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link--favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav-bar">
+                <div class="row">
+                    <div class="col-6 col-lg-4">
+                        <div class="logo">
+                            <img src="./assets/img/logo.svg" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-0">
+                        <div class="nav-bar__menu">
+                            <label for="menu" class="nav-bar__menu__inner">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <input type="checkbox" name="menu" id="menu" hidden>
+                        <div class="nav-bar__wrap">
+                            <div class="nav-bar__inner">
+                                <ul class="nav-bar__list">
+                                    <li class="nav-bar__items nav-bar__items--active">
+                                        <a href="#!" class="nav-bar__link">Home</a>
+                                    </li>
+                                    <li class="nav-bar__items">
+                                        <a href="#!" class="nav-bar__link">Menu</a>
+                                    </li>
+                                    <li class="nav-bar__items">
+                                        <a href="#!" class="nav-bar__link">Service</a>
+                                    </li>
+                                    <li class="nav-bar__items">
+                                        <a href="#!" class="nav-bar__link">Shop</a>
+                                    </li>
+                                </ul>
+                                <div class="nav-bar__cart">
+                                    <div class="nav-bar__cart__items">
+                                        <i class="fa-solid fa-magnifying-glass icon-search"></i>
+                                    </div>
+                                    <div class="nav-bar__cart__items">
+                                        <input type="text" name="input__cart" id="input__cart" class="input__cart">
+                                        <label for="input__cart" class="label-search">Search</label>
+                                    </div>
+                                    <div class="nav-bar__cart__items">
+                                        <span class="icon-cart">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                                viewbox="0 0 24 24">
+                                                <path fill="#3C3737" fill-rule="evenodd"
+                                                    d="M1.014 10.084a.464.464 0 01.45-.576h21.072c.302 0 .523.283.45.576L20.059 21.79a.927.927 0 01-.9.703H4.84a.927.927 0 01-.9-.703L1.015 10.084zm11.736 3.541a.75.75 0 00-1.5 0v4.75a.75.75 0 001.5 0v-4.75zm4.319-.561a.75.75 0 01.448.961l-1.624 4.464a.75.75 0 11-1.41-.513l1.625-4.464a.75.75 0 01.96-.448zm-9.177.448a.75.75 0 10-1.41.513l1.625 4.464a.75.75 0 101.41-.513l-1.625-4.464z"
+                                                    clip-rule="evenodd" />
+                                                <path stroke="#3C3737" stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    d="M18.5 10.5l-4.911-6.422a2 2 0 00-3.178 0L5.5 10.5" />
+                                            </svg>
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <section class="hezo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-6">
+                        <div class="hezo-content">
+                            <div class="hezo-content__top">
+                                <span class="hezo-content__text">More than Faster</span>
+                                <img src="./assets/icon/strawberry.svg" alt="strawberry">
+                            </div>
+                            <h1 class="heading lv1">Groceries Delivered in as little as
+                                <span class="heading__text">
+                                    2 hourse
+                                </span>
+                            </h1>
+                            <p class="hezo-desc">
+                                Grocen atssures fresh grocery every morning to your family without getting out in this
+                                pandemic
+                            </p>
+                            <div class="hezo__cta-group">
+                                <div class="row cross-axit-center">
+                                    <div
+                                        class="col-4 col-md-3 col-lg-2 col-lg-5 col-lg-5 col-xl-4 ml-auto not-distance">
+                                        <div class="hezo-cta__inner">
+                                            <a href="#!" class="hezo__btn">Order Now</a>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="col-5 col-md-4 col-lg-3 col-lg-5 col-lg-6 col-xl-4  mr-auto not-distance">
+                                        <a href="#!" class="watch-video">
+                                            <img src="./assets/icon/button-play.svg" alt="play" class="play__img">
+                                            <span class="hezo__cta__text">Order Process</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6">
+                        <div class="hezo-img">
+                            <img src="./assets/img/header-img.png" alt="" class="hezo-img">
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="service">
+            <div class="container">
+                <span class="text__service">What we Serve</span>
+                <h2 class="heading lv2 service--lv2">Fruit And Vegetable Delivered To Your Home</h2>
+                <div class="service__list">
+                    <!-- item-1 -->
+                    <div class="row row-gap-service">
+                        <div class="col-12 col-md-4">
+                            <article class="service__items">
+                                <div class="service__items__inner">
+                                    <div class="service__icon">
+                                        <img src="./assets/icon/service-ic1.svg" alt="service imgage icon 1">
+                                    </div>
+                                    <h3 class="heading lv3 service--lv3">Free shipping</h3>
+                                    <p class="service__desc">
+                                        Enjoy Order in a hand using the fresness of groceries
+                                    </p>
+                                </div>
+                                <div class="service__block"></div>
+
+                            </article>
+                        </div>
+
+                        <!-- item-2 -->
+                        <div class="col-12 col-md-4">
+                            <article class="service__items">
+                                <div class="service__items__inner">
+                                    <div class="service__icon">
+                                        <img src="./assets/icon/service-ic2.svg" alt="service imgage icon 2">
+                                    </div>
+                                    <h3 class="heading lv3 service--lv3">15 days returns</h3>
+                                    <p class="service__desc">
+                                        Order in a handy way using the freshness of the groceries.
+                                    </p>
+                                </div>
+                                <div class="service__block"></div>
+                            </article>
+
+                        </div>
+                        <!-- item-3 -->
+                        <div class="col-12 col-md-4">
+                            <article class="service__items">
+                                <div class="service__items__inner">
+                                    <div class="service__icon">
+                                        <img src="./assets/icon/service-ic3.svg" alt="service imgage icon 3">
+                                    </div>
+                                    <h3 class="heading lv3 service--lv3">Free shipping</h3>
+                                    <p class="service__desc">
+                                        If you get rotten items - return immediately to us.
+                                    </p>
+                                </div>
+                                <div class="service__block"></div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="feature">
+            <div class="container">
+                <div class="row row-gap-feature row-cross-axit-center">
+                    <div class="col-12 col-lg-7">
+                        <div class="feature_img-block">
+                            <img src="./assets/img/feat.png" alt="image feature" class="feature__img">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5">
+                        <div class="feature__content">
+                            <span class="text__feature-cta text__feature">WHY CHOOSE US</span>
+                            <h2 class="heading lv2 feature-cta--lv2 feature--lv2">Find Favorites and Discover New Ones
+                            </h2>
+                            <p class="feature-cta__desc feature__desc">At vero eos et accusamus et iusto odio
+                                dignissimos ducimus
+                                blanditiis
+                                praesen voluptatum deleniti.</p>
+                            <a href="#!" class="btn feature__btn">Explore Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="feature__bottom">
+            <div class="container">
+                <div class="row row-gap-feature row-cross-axit-center">
+                    <div class="col-12 col-lg-6 col-order">
+                        <div class="feature__bottom__img-block">
+                            <img src="./assets/img/feat2.png" alt="img feature bottom" class="feature__bottom__img">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="feature__bottom__content">
+                            <span class="text__feature__bottom text__feature-cta">
+                                HOME DELIVERY
+                            </span>
+                            <h2 class="heading lv2 feature--lv2 feature-cta--lv2">
+                                Sit at Home We Will Take Care Your Order
+                            </h2>
+                            <p class="feature__bottom__desc feature-cta__desc">
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                voluptatum deleniti atque corrupti
+                                quos
+                            </p>
+                            <a href="#!" class="btn feature__btn">Explore Now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+        <section class="cta">
+            <div class="container">
+                <div class="row row-gap-cta row-cross-axit-center">
+                    <div class="col-12 col-lg-5 col-xl-6">
+                        <div class="cta__img-block">
+                            <img src="./assets/icon/mobile.svg" alt="iphone" class="cta__img">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-7 col-xl-6">
+                        <div class="cta__content">
+                            <span class="text__cta text__feature-cta">
+                                Download our app
+                            </span>
+                            <h2 class="heading lv2 cta--lv2 feature-cta--lv2">
+                                Get the Groceries app order more easily.
+                            </h2>
+                            <p class="cta__desc feature-cta__desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt
+                                ut.
+                            </p>
+                            <div class="row">
+                                <div class="col-12 col-sm-10 col-md-8 col-lg-9 col-xl-10 col-xxl-10 mr-auto ml-auto">
+                                    <div class="cta-link__row">
+                                        <a href="#!" class="app__link dowload__link">
+                                            <img src="./assets/icon/apple.svg" alt="apple store" class="icon__dowload">
+                                            <span class="app__link__text">App Store</span>
+                                        </a>
+                                        <a href="#!" class="play__link dowload__link">
+                                            <img src="./assets/icon/playstore.svg" alt="play store"
+                                                class="icon__dowload">
+                                            <span class="app__link__text">App Store</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row row-gap--footer">
+                <div class="col-12 col-lg-4 col-xxl-4">
+                    <div class="footer__logo">
+                        <div class="footer__logo__inner">
+                            <img src="./assets/img/logo.svg" alt="logo" class="footer__icon__logo">
+                        </div>
+                        <p class="footer__desc">
+                            Fast delivery, which is active all over the world, serves with many transportation vehicles.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12  col-lg-3 col-xxl-2-6">
+                    <div class="footer__company">
+                        <h3 class="heading lv3 footer--lv3">
+                            Company
+                        </h3>
+                        <ul class="footer__list">
+                            <li class="footer__items">
+                                <a href="#!" class="footer__items__link">About Us</a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="#!" class="footer__items__link">Blog</a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="#!" class="footer__items__link">All Products</a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="#!" class="footer__items__link">Locations Map</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-xxl-2-6">
+                    <div class="footer__Services">
+                        <h3 class="heading lv3 footer--lv3">
+                            Services
+                        </h3>
+                        <ul class="footer__list">
+                            <li class="footer__items">
+                                <a href="#!" class="footer__items__link">Order tracking</a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="#!" class="footer__items__link">Wish List</a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="#!" class="footer__items__link">My account</a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="#!" class="footer__items__link">Terms & Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-2 col-xxl-2-6">
+                    <div class="footer__Get-in-Touch">
+                        <h3 class="heading lv3 footer--lv3">
+                            Get in Touch
+                        </h3>
+                        <p class="footer__desc">
+                            Subscribe to our weekly Newsletter and receive updates via email.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__way">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <span class="footer__way__text">
+                            All Rights Reserved @ BESNIK 2021
+                        </span>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="footer__way__row">
+                            <a href="#!" class="footer__way__link">Terms & Conditions</a>
+                            <a href="#!" class="footer__way__link">Privacy & Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
