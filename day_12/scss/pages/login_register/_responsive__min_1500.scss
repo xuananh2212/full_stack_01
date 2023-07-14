@@ -1,0 +1,24 @@
+@media screen and (min-width: 1500px) {
+  .container {
+    margin: 0 $marginMin1500;
+    width: calc(100% - calc($marginMin1500 * 2));
+  }
+  .landing-half-circle {
+    position: fixed;
+    width: 64%;
+    height: 140%;
+    border-radius: 50%;
+    background: url(../img/dot-texture.png) repeat 0 0 #fff;
+    top: -20%;
+    right: -32%;
+    pointer-events: none;
+  }
+  .landing-content {
+    .landing-content__row {
+      margin-top: 90px;
+    }
+  }
+  .landing-content__desc {
+    margin-top: 30px;
+  }
+}

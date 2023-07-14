@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIKINGER</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- link--google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Titillium+Web:wght@600;700;900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- link-font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <div class="landing">
+        <div class="container">
+            <div class="row no-gutters">
+                <input type="radio" name="login-register" id="login" hidden checked>
+                <input type="radio" name="login-register" id="register" hidden>
+                <div class="col-12 col-1368-6 col-landing-content">
+                    <div class="landing-content">
+                        <div class="logo">
+                            <img src="./assets/img/vikinger-logo.png" alt="logo" class="logo-icon">
+                        </div>
+                        <span class="heading__text">WELLCOME TO</span>
+                        <h1 class="heading lv1 landing--lv1">
+                            VIKINGER
+                        </h1>
+                        <p class="landing-content__desc">
+                            The next generation social network & community! Connect with your friends and play with our
+                            quests and badges
+                            gamification system!
+                        </p>
+                        <div class="landing-content__row">
+                            <div class="row no-gutters main-axit-center">
+                                <div class="col-6 col-max-500">
+                                    <label for="login" class="btn-login">Login</label>
+                                </div>
+                                <div class="col-6 col-max-500">
+                                    <label for="register" class="btn-register">Register</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="landing-half-circle"></div>
+                <div class="col-12 col-1368-6 col__max500-gap col-landing-form">
+                    <div class="landing-form">
+                        <div class="landing-form__login-register landing-form__login">
+                            <div class="landing-form__login__inner">
+                                <h2 class="heading lv2 leading__login-register--lv2">Account Login</h2>
+                                <form action="#!" class="form__login">
+                                    <div class="form-group">
+                                        <input type="text" name="username" id="username" required
+                                            class="input__login-register" autofocus>
+                                        <label for="username" class="label__login-register">Username or Email</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" name="passwd" id="passwd" required
+                                            class="input__login-register input__login">
+                                        <label for="passwd" class="label__login-register">Password</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="checkbox" name="remember" id="remember" hidden>
+                                        <label for="remember" class="check__box">Remember Me</label>
+                                        <a href="#!" class="forgot__link">Forgot Password?</a>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-login-register">
+                                            Login to your Account!
+                                        </button>
+                                    </div>
+                                </form>
+                                <p class="landing-form__login__desc">
+                                    <span class="landing-form__login__desc-text">
+                                        Login with your Social Account
+                                    </span>
+                                </p>
+                                <div class="social">
+                                    <div class="social__items">
+                                        <i class="fa-brands fa-square-facebook"></i>
+                                    </div>
+                                    <div class="social__items">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </div>
+                                    <div class="social__items">
+                                        <i class="fa-regular fa-message"></i>
+                                    </div>
+                                    <div class="social__items">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="landing-form__img-block">
+                                <img src="./assets/img/rocket.png" alt="tên lửa">
+                            </div>
+                        </div>
+                        <div class="landing-form__login-register landing-form__register">
+                            <div class="langding-form__register__inner">
+                                <h2 class="heading lv2 leading__login-register--lv2">
+                                    Create your Account!
+                                </h2>
+                                <form action="#!" class="form__login">
+                                    <div class="form-group">
+                                        <input class="input__login-register" type="email" name="email" id="email"
+                                            autofocus required>
+                                        <label class="label__login-register" for="email">Your Email</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="input__login-register" type="text" name="create-username"
+                                            id="create-username" required>
+                                        <label class="label__login-register" for="create-username">UserName</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="input__login-register" type="password" name="create-passwd"
+                                            id="create-passwd" required>
+                                        <label class="label__login-register" for="create-passwd">PassWord</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="input__login-register" type="password" name="repeat-passwd"
+                                            id="repeat-passwd" required>
+                                        <label class="label__login-register" for="passwd">Repeat Password</label>
+                                    </div>
+                                    <div class="form-group">
+
+                                        <input type="checkbox" name="send" id="send" hidden>
+                                        <label for="send" class="check__box">Send me news and updates via email</label>
+
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-login-register">
+                                            Register Now!
+                                        </button>
+                                    </div>
+                                </form>
+                                <p class="landing-form__register__desc">
+                                    You'll receive a confirmation email in your inbox with a link to activate your
+                                    account.
+                                    If you
+                                    have any problems,
+                                    <a href="#!">contact us</a> !
+                                </p>
+                            </div>
+                            <div class="landing-form__img-block">
+                                <img src="./assets/img/rocket.png" alt="tên lửa">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

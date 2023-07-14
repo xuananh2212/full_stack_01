@@ -1,0 +1,19 @@
+@mixin myBtnLogInResgiter {
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 54px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.25s ease-in-out;
+}
+@mixin myBtnRadiusLogInResgiter($value: login) {
+  @if ($value == "login") {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+  } @else {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+}

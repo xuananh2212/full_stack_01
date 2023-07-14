@@ -1,0 +1,24 @@
+@media screen and (min-width: 500px) {
+  .container {
+    margin: 0 $margin500To600;
+    padding: 0;
+  }
+  .landing-content {
+    .landing--lv1 {
+      font-size: 6.5rem;
+      font-weight: 900;
+    }
+    .col-max-500 {
+      max-width: 180px;
+    }
+    .landing-content__row {
+      margin-top: 40px;
+    }
+  }
+  .landing-form__login-register {
+    padding: 64px;
+  }
+  .col__max500-gap {
+    margin-top: 80px;
+  }
+}
