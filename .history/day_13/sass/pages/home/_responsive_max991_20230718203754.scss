@@ -1,7 +1,7 @@
 @media screen and (max-width: 991px) {
   .container {
     width: auto;
-    margin: 0 50px;
+    margin: 0 25px;
   }
 
   .aside {
@@ -34,13 +34,15 @@
     margin-top: 0;
   }
   .aside__items {
-    flex: 1 0 calc((100% / 4) - 20px);
+    flex: 1;
     padding: 5px;
     border-radius: 999px;
     border: 1px solid #8b828283;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-basis: calc((100% / 4) - 20px);
+    flex-shrink: 0;
   }
 
   .fa-solid.fa-bars.icon-menu {

@@ -1,10 +1,8 @@
 @media screen and (max-width: 575px) {
   .aside__list__link {
-    height: 200px;
+    // flex-wrap: nowrap;
     overflow: auto;
     height: 200px;
-    justify-content: flex-start;
-    padding-left: calc((100% - 111px) / 2);
 
     .aside__items {
       flex-shrink: 0;
@@ -28,7 +26,6 @@
     font-weight: 500;
   }
   .aside__items {
-    justify-content: flex-start;
     &:hover {
       background-color: transparent;
       opacity: 0.6;

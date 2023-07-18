@@ -649,7 +649,7 @@ html {
 @media screen and (max-width: 991px) {
   .container {
     width: auto;
-    margin: 0 25px;
+    margin: 0 50px;
   }
   .aside {
     display: flex;
@@ -681,14 +681,13 @@ html {
     margin-top: 0;
   }
   .aside__items {
+    flex: 1 0 calc(25% - 20px);
     padding: 5px;
     border-radius: 999px;
     border: 1px solid rgba(139, 130, 130, 0.5137254902);
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-basis: calc(25% - 20px);
-    flex-shrink: 0;
   }
   .fa-solid.fa-bars.icon-menu {
     cursor: pointer;
@@ -773,19 +772,36 @@ html {
 }
 @media screen and (max-width: 575px) {
   .aside__list__link {
-    flex-wrap: nowrap;
+    height: 200px;
     overflow: auto;
+    height: 200px;
+    justify-content: flex-start;
+    padding-left: calc((100% - 111px) / 2);
   }
   .aside__list__link .aside__items {
     flex-shrink: 0;
-    flex-basis: auto;
+    flex-basis: 100%;
     border: none;
+  }
+  .header {
+    width: 60%;
   }
   .main__img {
     height: 188px;
   }
   .row-gap-mobile {
     gap: 22px;
+  }
+  .aside__items__text {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+  .aside__items {
+    justify-content: flex-start;
+  }
+  .aside__items:hover {
+    background-color: transparent;
+    opacity: 0.6;
   }
 }
 
