@@ -88,11 +88,11 @@ Quy ước: Triển khai theo Mobile First
 }
 
 @include sizeItems("col-xxl");
-.col-xxl-2-7-2 {
-  --column-number: 2.72;
+.col-xxl-2-7-8 {
+  --column-number: 2.78;
 }
-.col-xxl-9-2-8 {
-  --column-number: 9.28;
+.col-xxl-9-2-2 {
+  --column-number: 9.22;
 }
 
 @media screen and (max-width: 1200px) {

@@ -25,7 +25,7 @@ html {
 }
 
 .aside {
-  padding: 54px 0px 62px 42px;
+  padding: 54px 0px 62px 50px;
 }
 
 .aside-heading--lv2 {
@@ -44,7 +44,7 @@ html {
 .aside__items__link {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 
 .aside__items__text {
@@ -58,10 +58,6 @@ html {
   width: 191px;
   border-radius: 8px;
   transition: background 0.25s linear;
-  img {
-    width: 22px;
-    height: 22px;
-  }
 
   &:hover {
     background: #ebebeb;
@@ -86,7 +82,7 @@ html {
 // header
 
 .header {
-  padding-top: 44px;
+  padding-top: 40px;
   height: 128px;
 }
 .form-group,

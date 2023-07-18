@@ -15,7 +15,16 @@ html {
   padding: 0;
   margin: 0 calc((100vw - var(--container-width)) / 2);
 }
-
+.row.no-gutters .col-xxl-2 {
+  flex-basis: 20%;
+  max-width: 20%;
+  padding: 0 18px;
+}
+.row.no-gutters .col-xxl-10 {
+  flex-basis: 80%;
+  max-width: 80%;
+  padding: 0 18px;
+}
 .times-mobile {
   display: none;
 }
@@ -25,14 +34,15 @@ html {
 }
 
 .aside {
-  padding: 54px 0px 62px 42px;
+  padding: 54px 0px 62px 50px;
 }
 
 .aside-heading--lv2 {
   color: $primaryColor;
-  font-size: 3.2rem;
+  font-size: 3.1rem;
   font-style: normal;
   font-weight: 800;
+  line-height: normal;
 }
 .aside__list {
   margin-top: 60px;
@@ -44,32 +54,22 @@ html {
 .aside__items__link {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 
 .aside__items__text {
   color: $primaryColor;
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 400;
   line-height: normal;
 }
 .aside__items {
-  padding: 6px;
-  width: 191px;
-  border-radius: 8px;
-  transition: background 0.25s linear;
-  img {
-    width: 22px;
-    height: 22px;
-  }
-
   &:hover {
-    background: #ebebeb;
-    opacity: 0.9;
+    opacity: 0.6;
   }
 }
 .aside__items + .aside__items {
-  margin-top: 16px;
+  margin-top: 29px;
 }
 .aside__support {
   cursor: pointer;
@@ -86,8 +86,8 @@ html {
 // header
 
 .header {
-  padding-top: 44px;
-  height: 128px;
+  padding-top: 40px;
+  height: 120px;
 }
 .form-group,
 .nav-bar__list,
@@ -103,9 +103,6 @@ html {
   padding-left: 18px;
 }
 .input__search::placeholder {
-  font-size: 1.8rem;
-  font-weight: 600;
-  background: #fff;
   opacity: 0.2;
 }
 .nav-bar__list {
@@ -119,9 +116,8 @@ html {
   position: relative;
   display: inline-block;
   color: $primaryColor;
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #000;
+  font-size: 1.7rem;
+  font-weight: 400;
   padding-bottom: 4px;
 }
 .nav-bar__link::before {

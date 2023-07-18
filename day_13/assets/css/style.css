@@ -257,6 +257,14 @@ Quy ước: Triển khai theo Mobile First
   --column-number: 12;
 }
 
+.col-xxl-2-7-2 {
+  --column-number: 2.72;
+}
+
+.col-xxl-9-2-8 {
+  --column-number: 9.28;
+}
+
 @media screen and (max-width: 1200px) {
   .col-xl-0 {
     display: none;
@@ -451,15 +459,14 @@ html {
 }
 
 .aside {
-  padding: 54px 0px 62px 0px;
+  padding: 54px 0px 62px 42px;
 }
 
 .aside-heading--lv2 {
   color: #000;
-  font-size: 3.1rem;
+  font-size: 3.2rem;
   font-style: normal;
   font-weight: 800;
-  line-height: normal;
 }
 
 .aside__list {
@@ -473,22 +480,33 @@ html {
 .aside__items__link {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .aside__items__text {
   color: #000;
   font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: 600;
   line-height: normal;
 }
 
+.aside__items {
+  padding: 6px;
+  width: 191px;
+  border-radius: 8px;
+  transition: background 0.25s linear;
+}
+.aside__items img {
+  width: 22px;
+  height: 22px;
+}
 .aside__items:hover {
-  opacity: 0.6;
+  background: #ebebeb;
+  opacity: 0.9;
 }
 
 .aside__items + .aside__items {
-  margin-top: 29px;
+  margin-top: 16px;
 }
 
 .aside__support {
@@ -505,8 +523,8 @@ html {
 }
 
 .header {
-  padding-top: 40px;
-  height: 150px;
+  padding-top: 44px;
+  height: 128px;
 }
 
 .form-group,
@@ -525,6 +543,9 @@ html {
 }
 
 .input__search::placeholder {
+  font-size: 1.8rem;
+  font-weight: 600;
+  background: #fff;
   opacity: 0.2;
 }
 
@@ -540,8 +561,9 @@ html {
   position: relative;
   display: inline-block;
   color: #000;
-  font-size: 1.7rem;
-  font-weight: 400;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #000;
   padding-bottom: 4px;
 }
 
@@ -619,6 +641,9 @@ html {
   .container {
     width: 950px;
     margin: 0 auto;
+  }
+  .aside {
+    padding-left: 0;
   }
 }
 @media screen and (max-width: 991px) {
@@ -742,7 +767,7 @@ html {
     visibility: visible;
     opacity: 1;
   }
-  input[id=menu]:checked ~ .col-xxl-10 .header {
+  input[id=menu]:checked ~ .col-xxl-9-2-8 .header {
     transform: translateX(0);
   }
 }

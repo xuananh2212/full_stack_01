@@ -48,6 +48,14 @@
   margin-left: 0;
   margin-right: 0;
 }
+.row [class^="col-xxl-2"] {
+  flex-basis: 23.2%;
+  max-width: 23.2%;
+}
+.row [class^="col-xxl-10"] {
+  flex-basis: 76.8%;
+  max-width: 76.8%;
+}
 
 .row [class^="col-"] {
   --column-width: calc(100% / (var(--max-column) / var(--column-number)));
@@ -88,12 +96,6 @@ Quy ước: Triển khai theo Mobile First
 }
 
 @include sizeItems("col-xxl");
-.col-xxl-2-7-2 {
-  --column-number: 2.72;
-}
-.col-xxl-9-2-8 {
-  --column-number: 9.28;
-}
 
 @media screen and (max-width: 1200px) {
   @include sizeItems("col-xl");
