@@ -1,0 +1,9 @@
+.container {
+  --container-width: 1400px;
+  margin: 0;
+  padding: 0 calc((100vw - var(--container-width)) / 2);
+}
+
+.aside {
+  padding: 54px 0px 62px 0px;
+}

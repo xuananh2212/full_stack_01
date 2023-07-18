@@ -1,0 +1,88 @@
+body,
+input,
+button {
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 1.6rem;
+}
+a {
+  text-decoration: none;
+}
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  --container-width: 1400px;
+  padding: 0;
+  margin: 0 calc((100vw - var(--container-width)) / 2);
+}
+
+.aside {
+  padding: 54px 0px 62px 0px;
+}
+
+.aside-heading--lv2 {
+  color: #000;
+  font-family: Sofia Pro;
+  font-size: 31.424px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.aside__list {
+  margin-top: 60px;
+}
+
+.aside__list__link {
+  margin-top: 48px;
+}
+.aside__items__link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.aside__items__text {
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: normal;
+}
+.aside__items + .aside__items {
+  margin-top: 29px;
+}
+
+.header {
+  padding-top: 40px;
+  height: 150px;
+}
+.form-group,
+.nav-bar__list,
+.nav-bar__actions,
+.nav-bar {
+  display: flex;
+  align-items: center;
+}
+.input__search {
+  outline: none;
+  border: none;
+  display: block;
+  padding-left: 18px;
+}
+.nav-bar__list {
+  margin-left: auto;
+}
+
+.nav-bar__link {
+  display: inline-block;
+  color: #000;
+  font-size: 17px;
+  font-weight: 400;
+  padding: 10px 23px 10px 23px;
+}
+.nav-bar__actions {
+  margin-left: 27px;
+}
+.nav-bar__actions {
+  gap: 26px;
+}

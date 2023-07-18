@@ -1,0 +1,42 @@
+@media screen and (max-width: 991px) {
+  .container {
+    width: auto;
+    margin: 0 25px;
+  }
+
+  .aside {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .aside__support {
+    position: static;
+    margin: 0;
+    align-items: center;
+  }
+  .aside__list {
+    width: 80%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    order: 1;
+  }
+  .aside-heading--lv2 {
+    text-align: center;
+  }
+  .aside__list__link {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    overflow: auto;
+  }
+  .aside__items + .aside__items {
+    margin-top: 0;
+  }
+  .aside__items {
+    flex-basis: calc((100% / 4) - 100px);
+    // flex-shrink: 0;
+  }
+}

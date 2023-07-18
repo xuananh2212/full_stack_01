@@ -1,0 +1,19 @@
+@media screen and (max-width: 575px) {
+  .aside__list__link {
+    flex-wrap: nowrap;
+    overflow: auto;
+
+    .aside__items {
+      flex-shrink: 0;
+      flex-basis: auto;
+      border: none;
+    }
+  }
+  //   main
+  .main__img {
+    height: 188px;
+  }
+  .row-gap-mobile {
+    gap: $row-gap;
+  }
+}

@@ -1,0 +1,7 @@
+@mixin myPadding($a) {
+  @if ($a == bottom) {
+    padding-bottom: 12px;
+  } @else {
+    padding-top: 12px;
+  }
+}

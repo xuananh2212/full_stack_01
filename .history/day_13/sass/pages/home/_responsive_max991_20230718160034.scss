@@ -1,0 +1,132 @@
+@media screen and (max-width: 991px) {
+  .container {
+    width: auto;
+    margin: 0 25px;
+  }
+
+  .aside {
+    display: flex;
+    padding: 20px 0px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .aside__support {
+    position: static;
+    margin: 0;
+    align-items: center;
+  }
+  .aside__list {
+    width: 100%;
+    margin-top: 30px;
+    order: 1;
+  }
+  .aside-heading--lv2 {
+    text-align: center;
+  }
+  .aside__list__link {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .aside__items + .aside__items {
+    margin-top: 0;
+  }
+  .aside__items {
+    padding: 5px;
+    border-radius: 999px;
+    border: 1px solid #8b828283;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: calc((100% / 4) - 20px);
+    flex-shrink: 0;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  .fa-solid.fa-bars.icon-menu {
+    cursor: pointer;
+    padding-top: 30px;
+    display: inline-block;
+    font-size: 3rem;
+  }
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background-color: #33333365;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.25s linear;
+    transition-property: opacity, visibility;
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 45%;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform 0.25s linear;
+  }
+  .nav-bar {
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .nav-bar__list {
+    margin-left: 0;
+    display: block;
+  }
+
+  .nav-bar__items {
+    padding-left: 0;
+  }
+
+  .nav-bar__items + .nav-bar__items {
+    margin-top: 30px;
+  }
+  .nav-bar__actions {
+    margin-top: 50px;
+    order: 2;
+    margin-left: 0px;
+    justify-content: space-between;
+  }
+  .form__search {
+    order: 1;
+    width: 100%;
+  }
+  .input__search {
+    display: block;
+    width: calc(100% - 25px);
+  }
+  .times-mobile {
+    display: block;
+    margin-left: auto;
+  }
+  .fa-solid.fa-xmark.icon-times {
+    cursor: pointer;
+    display: block;
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    background-color: rgb(179, 59, 59);
+  }
+
+  input[id="menu"]:checked ~ .col-lg-12 .overlay {
+    visibility: visible;
+    opacity: 1;
+  }
+  input[id="menu"]:checked ~ .col-xxl-10 .header {
+    transform: translateX(0);
+  }
+}

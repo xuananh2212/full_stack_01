@@ -1,0 +1,47 @@
+body {
+  font-family: "Sofia Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  --container-width: 1400px;
+  margin: 0;
+  padding: 0 calc((100% - var(--container-width)) / 2);
+}
+
+.aside {
+  padding: 54px 0px 62px 0px;
+}
+
+.aside-heading--lv2 {
+  color: #000;
+  font-family: Sofia Pro;
+  font-size: 31.424px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.aside__list {
+  margin-top: 60px;
+}
+
+.aside__list__link {
+  margin-top: 48px;
+}
+.aside__items__link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.aside__items__text {
+  color: #000;
+  font-size: 16.456px;
+  font-weight: 400;
+  line-height: normal;
+}
+.aside__items + .aside__items {
+  margin-top: 29px;
+}

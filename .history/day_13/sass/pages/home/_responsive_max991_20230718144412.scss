@@ -1,0 +1,24 @@
+@media screen and (max-width: 991px) {
+  .container {
+    width: auto;
+    margin: 0 25px;
+  }
+
+  .aside {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .aside__support {
+    position: static;
+    margin: 0;
+    align-items: flex-start;
+  }
+  .aside__list {
+    order: 1;
+  }
+  .aside__list__link {
+    width: 100%;
+    display: flex;
+  }
+}

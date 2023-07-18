@@ -1,0 +1,115 @@
+body,
+input,
+button {
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 1.6rem;
+}
+a {
+  text-decoration: none;
+}
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  padding: 0;
+  margin: 0 calc((100vw - var(--container-width)) / 2);
+}
+
+.aside {
+  padding: 54px 0px 62px 0px;
+}
+
+.aside-heading--lv2 {
+  color: #000;
+  font-family: Sofia Pro;
+  font-size: 31.424px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.aside__list {
+  margin-top: 60px;
+}
+
+.aside__list__link {
+  margin-top: 48px;
+}
+.aside__items__link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.aside__items__text {
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: normal;
+}
+.aside__items + .aside__items {
+  margin-top: 29px;
+}
+.aside__support {
+  mt330px
+
+}
+
+
+// header
+
+.header {
+  padding-top: 40px;
+  height: 150px;
+}
+.form-group,
+.nav-bar__list,
+.nav-bar__actions,
+.nav-bar {
+  display: flex;
+  align-items: center;
+}
+.input__search {
+  outline: none;
+  border: none;
+  display: block;
+  padding-left: 18px;
+}
+.input__search::placeholder {
+  opacity: 0.2;
+}
+.nav-bar__list {
+  margin-left: auto;
+}
+.nav-bar__items {
+  padding: 10px 23px 10px 23px;
+}
+
+.nav-bar__link {
+  position: relative;
+  display: inline-block;
+  color: #000;
+  font-size: 17px;
+  font-weight: 400;
+  padding-bottom: 4px;
+}
+.nav-bar__link::before {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  height: 2px;
+  width: 0px;
+  background-color: #000;
+  transition: width 0.25s linear;
+}
+.nav-bar__items--action .nav-bar__link::before,
+.nav-bar__items:hover .nav-bar__link::before {
+  width: 100%;
+}
+.nav-bar__actions {
+  margin-left: 27px;
+}
+.nav-bar__actions {
+  gap: 26px;
+}

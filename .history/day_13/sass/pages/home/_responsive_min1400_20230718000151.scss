@@ -1,0 +1,5 @@
+.container {
+  --container-width: 1400px;
+  margin: 0;
+  padding: 0 calc((100vw - var(--container-width)) / 2);
+}
